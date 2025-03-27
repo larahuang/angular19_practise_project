@@ -1,5 +1,11 @@
+
+```
 # angular19_practise_project
 Node v20.17.0
+安裝指令
+```
+npm create vite@latest
+
 Angular CLI 19.2.5.
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
@@ -58,3 +64,34 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+### 使用Angular Material來幫我們快速建立各種元件
+```
+ng add @angular/material
+```
+生成的檔案會是『大寫小寫英文-大寫小寫英文.component』副檔名會有
+<ol>
+  <li><b>html:</b>HTML檔案</li>
+  <li><b>scss:</b>樣式</li>
+  <li><b>spec.ts:</b>單元測試檔案</li>
+  <li><b>ts:</b>資料定義與函式</li>
+</ol>
+終端機
+✔ Determining Package Manager
+  › Using package manager: npm
+✔ Searching for compatible package version
+  › Found compatible package version:
+    @angular/material@19.2.7.
+✔ Loading package information from registry
+⠹ Confirming installation
+
+The package @angular/material@19.2.7 will be installed and 
+executed.
+Would you like to proceed? (Y/n)
+
+
+建立組件指令
+```
+ng g c 頁面或是功能
+```
