@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { environment } from '../environment/environment'
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'vite_project';
+
+  ngOnInit() {
+     console.log(environment.production ? 'Production' : '開發中')
+  }
 }
