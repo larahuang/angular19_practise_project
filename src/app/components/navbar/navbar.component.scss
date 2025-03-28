@@ -22,7 +22,9 @@ ul{
     display: flex;
     list-style-type: none;
     margin: auto 10px;
-
+    &.activeNav {
+      border-bottom: 1px solid #333;
+    }
     a {
       cursor: pointer;
       color: #333;
