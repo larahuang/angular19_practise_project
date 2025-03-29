@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let item of sendNav"
+     [ngClass]="sendPageTitle === item.title ? 'activeNav' : ''"
+  >
+    <a
+    [routerLink]="item.path"
+    (click)="actionLis(item.title)"
+    > {{item.title}}</a>
+  </li>
+</ul>

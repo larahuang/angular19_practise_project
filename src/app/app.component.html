@@ -4,6 +4,14 @@
 [sendIsActive]="isActive"
 (newPageTitle)="actionList($event)"
 ></app-navbar>
+<app-create-nav
+[sendBgStyle]="bgStyle"
+[sendCreateLists]="navLists"
+[sendPageTitle]="pageTitle"
+[sendIsActive]="isActive"
+(newPageTitle)="actionList($event)"
+></app-create-nav>
+
 <main class="main">
 </main>
 <router-outlet />

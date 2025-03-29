@@ -1,0 +1,13 @@
+<div class="nav" [ngStyle]="{'background-color': sendBgStyle}">
+<ul >
+  <li
+  *ngFor="let i of sendCreateLists"
+  [ngClass]="i.title === sendPageTitle ? 'active' : '' "
+  >
+    <a [routerLink]="i.path"
+    (activeList)="i.title"
+    (newPageTitle) ="activeList(i.title)"
+    >{{i.title}}</a>
+  </li>
+</ul>
+</div>

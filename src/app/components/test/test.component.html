@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of sendNavList">
+     <a
+    [routerLink]="item.path"
+    (actionList)="item.title"
+    > {{item.title}}</a>
+  </li>
+</ul>
+<div>Test</div>

@@ -18,7 +18,5 @@ export class NavbarComponent implements OnInit {
   sendActionList(path: string) {
     this.newPageTitle.emit(path);
   }
-ngOnInit(): void {
-
-}
+  ngOnInit(): void {}
 }

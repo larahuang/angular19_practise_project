@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let i of sendNavLists"
+  [ngClass]="sendPageTitle===i.title?'activeNav':''">
+    <a [routerLink]="i.path"
+    (click)="actionList(i.title)">
+      {{i.title}}
+    </a>
+  </li>
+</ul>
